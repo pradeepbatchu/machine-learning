@@ -6,7 +6,7 @@ from matplotlib import style
 import random
 
 #dataset
-data=pd.read_csv("D:/DS/Data.csv",encoding='utf-8')
+data=pd.read_csv("Data.csv",encoding='utf-8')
 X=data.iloc[:,0:-1].values
 y=data.iloc[:, 3].values
 
