@@ -1,0 +1,13 @@
+title: ICD CODE Finder IIII
+subtitle: AI Assistant TEST
+inputTextFieldHint: Type your message...
+initPayload: /greet
+hideWhenNotConnected: false
+customData:
+  language: en
+showMessageDate: false
+profileAvatar: 'https://chatcarousel.tbps.in/chatboticons/nlogo.png'
+displayUnreadCount: true
+disableTooltips: true
+autoClearCache: true
+showFullScreenButton: false

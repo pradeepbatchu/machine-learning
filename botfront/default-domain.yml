@@ -1,0 +1,13 @@
+responses:
+  utter_greet:
+    - text: Hi. What are you looking for?
+    - text: Hello! What can I help you find today?
+forms:
+  extract_entities_form:
+    symptom:
+      - type: from_text
+  extract_icd_form:
+    symptom:
+      - type: from_text
+actions:
+  - actions_icd

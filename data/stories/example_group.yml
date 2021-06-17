@@ -1,0 +1,63 @@
+stories:
+  - story: affirm
+    steps:
+      - intent: affirm
+        entities: []
+      - action: utter_affirm
+    metadata:
+      group: Example group
+  - story: connectors
+    steps:
+      - intent: integartion_faq
+        entities: []
+      - action: utter_connectors
+      - checkpoint: connectors__branches
+    metadata:
+      group: Example group
+  - story: connectors__New Branch 1
+    steps:
+      - checkpoint: connectors__branches
+    metadata:
+      group: Example group
+  - story: connectors__New Branch 2
+    steps:
+      - checkpoint: connectors__branches
+    metadata:
+      group: Example group
+  - story: deny
+    steps:
+      - intent: deny
+        entities: []
+      - action: utter_deny
+    metadata:
+      group: Example group
+  - story: ICD
+    steps:
+      - intent: icd
+      - action: actions_icd
+      - action: utter_conversation_continue
+    metadata:
+      group: Example group
+  - story: show products
+    steps:
+      - intent: products
+      - action: utter_ozgMn-fZC
+    metadata:
+      group: Example group
+rules:
+  - rule: Farewells
+    condition: []
+    steps:
+      - intent: bye
+      - action: utter_bye
+    metadata:
+      group: Example group
+  - rule: Get started
+    condition: []
+    steps:
+      - intent: greet
+      - action: utter_greet
+    conversation_start: true
+    wait_for_user_input: false
+    metadata:
+      group: Example group

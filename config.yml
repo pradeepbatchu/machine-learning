@@ -1,0 +1,28 @@
+pipeline:
+  - name: WhitespaceTokenizer
+  - name: RegexFeaturizer
+  - name: LexicalSyntacticFeaturizer
+  - name: CountVectorsFeaturizer
+  - name: CountVectorsFeaturizer
+    analyzer: char_wb
+    min_ngram: 1
+    max_ngram: 4
+  - name: DIETClassifier
+    epochs: 200
+  - name: ResponseSelector
+    epochs: 200
+  - name: DucklingEntityExtractor
+    url: 'https://duckling.chatbot.netrovert.net'
+  - name: EntitySynonymMapper
+language: en
+
+
+policies:
+  - name: TEDPolicy
+    epochs: 50
+    max_history: 5
+    batch_size:
+      - 32
+      - 64
+  - name: RulePolicy
+  - name: AugmentedMemoizationPolicy
