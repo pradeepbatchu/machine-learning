@@ -6,6 +6,7 @@ nlu:
   examples: |
     - bye
     - good bye
+    - see you soon
 - intent: greet
   metadata:
     language: en
