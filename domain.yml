@@ -1,0 +1,30 @@
+actions:
+  - action_botfront_disambiguation
+  - action_botfront_disambiguation_followup
+  - action_botfront_fallback
+  - action_botfront_mapping
+  - utter_bye
+  - utter_greet
+  - utter_hi
+entities: []
+forms: {}
+intents:
+  - bye
+  - chitchat.greet
+  - greet
+responses:
+  utter_bye:
+    - language: en
+      metadata: null
+      text: ok bye
+  utter_greet:
+    - language: en
+      metadata: null
+      text: hello Good to see you
+session_config: {}
+slots:
+  disambiguation_message:
+    type: unfeaturized
+  fallback_language:
+    initial_value: en
+    type: unfeaturized

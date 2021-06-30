@@ -1,0 +1,51 @@
+stories:
+  - story: test_story_kED06MEvp
+    steps:
+      - user: /greet
+        intent: greet
+      - action: utter_greet
+      - user: hi
+        intent: greet
+      - action: utter_greet
+      - user: bye
+        intent: bye
+      - action: utter_bye
+    metadata:
+      group: Example group
+      language: en
+  - story: test_story_zBCiW2mQf
+    steps:
+      - user: /greet
+        intent: greet
+      - action: utter_greet
+      - user: hi
+        intent: greet
+      - action: utter_greet
+      - user: bye
+        intent: bye
+      - action: utter_bye
+    metadata:
+      group: Example group
+      language: en
+  - story: test_story_B8rUpky4P
+    steps:
+      - user: /greet
+        intent: greet
+      - action: utter_greet
+    metadata:
+      group: Example group
+      language: en
+  - story: test_story_GjmH7mPmE
+    steps:
+      - user: /greet
+        intent: greet
+      - action: utter_greet
+      - user: hi
+        intent: greet
+      - action: utter_greet
+      - user: bye
+        intent: bye
+      - action: utter_bye
+    metadata:
+      group: Example group
+      language: en

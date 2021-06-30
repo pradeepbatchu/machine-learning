@@ -1,0 +1,10 @@
+name: ICD
+namespace: bf-icd
+defaultLanguage: en
+nluThreshold: 0.75
+timezoneOffset: 0
+allowContextualQuestions: false
+instance:
+  name: Default Instance
+  host: 'http://localhost:5005'
+  projectId: diettTmNAKwYzeSEy

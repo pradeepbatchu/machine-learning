@@ -1,0 +1,16 @@
+version: "2.0"
+nlu:
+- intent: bye
+  metadata:
+    language: en
+  examples: |
+    - bye
+    - good bye
+- intent: greet
+  metadata:
+    language: en
+  examples: |
+    - good evening
+    - good morning
+    - hello
+    - hi

@@ -1,0 +1,24 @@
+pipeline:
+  - name: WhitespaceTokenizer
+  - name: LexicalSyntacticFeaturizer
+  - name: CountVectorsFeaturizer
+  - name: CountVectorsFeaturizer
+    analyzer: char_wb
+    min_ngram: 1
+    max_ngram: 4
+  - name: DIETClassifier
+    epochs: 200
+  - name: EntitySynonymMapper
+language: en
+
+
+policies:
+  - name: AugmentedMemoizationPolicy
+    max_history: 4
+  - name: TEDPolicy
+    max_history: 4
+    epochs: 100
+  - name: RulePolicy
+    core_fallback_threshold: 0.4
+    core_fallback_action_name: "action_default_fallback"
+    enable_fallback_prediction: True
