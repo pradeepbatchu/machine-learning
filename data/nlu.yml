@@ -11,6 +11,7 @@ nlu:
     language: en
   examples: |
     - good evening
+    - good mng
     - good morning
     - hello
     - hellooo
