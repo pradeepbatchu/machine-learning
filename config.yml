@@ -1,6 +1,5 @@
 pipeline:
   - name: WhitespaceTokenizer
-  - name: RegexFeaturizer
   - name: LexicalSyntacticFeaturizer
   - name: CountVectorsFeaturizer
   - name: CountVectorsFeaturizer
@@ -9,10 +8,6 @@ pipeline:
     max_ngram: 4
   - name: DIETClassifier
     epochs: 200
-  - name: ResponseSelector
-    epochs: 200
-  - name: DucklingEntityExtractor
-    url: 'https://duckling.chatbot.netrovert.net'
   - name: EntitySynonymMapper
 language: en
 

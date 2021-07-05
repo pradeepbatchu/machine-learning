@@ -1,84 +1,64 @@
 version: "2.0"
 nlu:
-- intent: affirm
-  metadata:
-    language: en
-  examples: |
-    - definitely
-    - ok
-    - yes
 - intent: bye
   metadata:
     language: en
   examples: |
     - bye
     - good bye
-- intent: deny
-  metadata:
-    language: en
-  examples: |
-    - no
-    - nope
-    - uh no
 - intent: extract_entities
   metadata:
     language: en
-  examples: |
-    - Disease Information
-    - extract_entities
+  examples:
+  - text: |
+      Disease Information
+    metadata:
+      canonical: true
+  - text: |
+      extract_entities
 - intent: extract_icd_codes
   metadata:
     language: en
-  examples: |
-    - I want to check ICD code
-    - ICDCODE
+  examples:
+  - text: |
+      I want to check ICD code
+    metadata:
+      canonical: true
+  - text: |
+      ICDCODE
 - intent: greet
   metadata:
     language: en
   examples: |
-    - Good Morning
-    - Good evening
     - hello
-    - hellooo
-    - hey
-    - heyyy
     - hi
-    - hiiii
-    - hiiiiiiiiii
 - intent: icd
   metadata:
     language: en
-  examples: |
-    - [Bone marrow]{"entity": "symptom", "value": "bone marrow"}
-    - [Diabetes]{"entity": "symptom", "value": "diabetes"} icd value
-    - [Hypervitaminosis]{"entity": "symptom", "value": "hypervitaminosis"}
-    - ICD code for [Coronavirus]{"entity": "symptom", "value": "coronavirus"}
-    - ICD code for [typhoid]{"entity": "symptom", "value": "Typhoid"}
-    - [PNEUMONIA]{"entity": "symptom", "value": "pneumonia"}
-    - [Tuberculosis]{"entity": "symptom", "value": "tuberculosis"}
-    - can you get me icd code for [Cholera]{"entity": "symptom", "value": "cholera"}
-    - [cancer]{"entity": "symptom", "value": "Cancer"}
-    - get icd code for [cold]{"entity": "symptom", "value": "Cold"}
-    - get me icd value of  [Gastrointestinal]{"entity": "symptom", "value": "gastrointestinal"}
-    - icd code for [fever]{"entity": "symptom", "value": "Fever"}
-    - icd code for [headache]{"entity": "symptom", "value": "Headache"}
-    - icd code for [pain]{"entity": "symptom", "value": "PAIN"}
-    - icd value for [Dengue]{"entity": "symptom", "value": "dengue"}
-    - please provide me icd code for [Smallpox]{"entity": "symptom", "value": "smallpox"}
-    - show me icd code for [handpain]{"entity": "symptom", "value": "Handpain"}
-    - show me the icd code for [corona]{"entity": "symptom", "value": "Corona"}
-    - what is name for icd code [A15]{"entity": "symptom", "value": "a15"}
-    - what is the icd code for [cough]{"entity": "symptom", "value": "Cough"}
-- intent: integartion_faq
-  metadata:
-    language: en
-  examples: |
-    - Can you please explain connector?
-    - Can you please help with integration?
-    - What is adapter?
+  examples:
+  - text: |
+      I am suffering from [[fever](symptom)]{"entity": "symptom", "value": "fever"}
+    metadata:
+      canonical: true
+  - text: |
+      get icd code for [[cold](symptom)]{"entity": "symptom", "value": "cold"}
+    metadata:
+      canonical: true
+  - text: |
+      show me the icd code for [corona](symptom)
+    metadata:
+      canonical: true
+  - text: |
+      what is the icd code for [cough](symptom)
+    metadata:
+      canonical: true
 - intent: products
   metadata:
     language: en
-  examples: |
-    - products
-    - show products
+  examples:
+  - text: |
+      products
+    metadata:
+      canonical: true
+  - text: |
+      show products

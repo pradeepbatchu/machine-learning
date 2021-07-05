@@ -5,166 +5,78 @@ cards:
       Engagements: of those conversations, those with length one or more.
     type: conversationCounts
     visible: true
-    startDate: '2021-06-03T00:00:00.000Z'
-    endDate: '2021-06-09T23:59:59.999Z'
+    startDate: '2021-06-16T18:30:00.000Z'
+    endDate: '2021-06-23T18:29:59.999Z'
     chartType: line
     valueType: absolute
-    includeIntents: null
-    excludeIntents: null
-    includeActions: null
-    excludeActions: null
+    wide: true
+    showDenominator: true
     conversationLength: 1
     userInitiatedConversations: true
     triggerConversations: true
-    selectedSequence: null
-    wide: true
-    showDenominator: true
-    limit: null
-    eventFilter: []
     eventFilterOperator: or
-    __typename: AnalyticsCard
+    eventFilter: []
   - name: Conversation Length
-    description: null
     type: conversationLengths
     visible: true
-    startDate: '2021-06-03T00:00:00.000Z'
-    endDate: '2021-06-09T23:59:59.999Z'
+    startDate: '2021-06-16T18:30:00.000Z'
+    endDate: '2021-06-23T18:29:59.999Z'
     chartType: bar
     valueType: absolute
-    includeIntents: null
-    excludeIntents: null
-    includeActions: null
-    excludeActions: null
-    conversationLength: null
-    userInitiatedConversations: null
-    triggerConversations: null
-    selectedSequence: null
-    wide: null
-    showDenominator: null
-    limit: null
-    eventFilter: null
-    eventFilterOperator: null
-    __typename: AnalyticsCard
   - name: Top 10 Intents
-    description: null
     type: intentFrequencies
     visible: true
-    startDate: '2021-06-03T00:00:00.000Z'
-    endDate: '2021-06-09T23:59:59.999Z'
+    startDate: '2021-06-16T18:30:00.000Z'
+    endDate: '2021-06-23T18:29:59.999Z'
     chartType: bar
     valueType: absolute
-    includeIntents: null
     excludeIntents:
       - get_started
-    includeActions: null
-    excludeActions: null
-    conversationLength: null
-    userInitiatedConversations: null
-    triggerConversations: null
-    selectedSequence: null
-    wide: null
-    showDenominator: null
     limit: 10
-    eventFilter: null
-    eventFilterOperator: null
-    __typename: AnalyticsCard
   - name: Conversation Duration
-    description: null
     type: conversationDurations
     visible: true
-    startDate: '2021-06-03T00:00:00.000Z'
-    endDate: '2021-06-09T23:59:59.999Z'
+    startDate: '2021-06-16T18:30:00.000Z'
+    endDate: '2021-06-23T18:29:59.999Z'
     chartType: bar
     valueType: absolute
-    includeIntents: null
-    excludeIntents: null
-    includeActions: null
-    excludeActions: null
-    conversationLength: null
-    userInitiatedConversations: null
-    triggerConversations: null
-    selectedSequence: null
-    wide: null
-    showDenominator: null
-    limit: null
-    eventFilter: null
-    eventFilterOperator: null
-    __typename: AnalyticsCard
   - name: Conversations with Fallback
     description: The number of conversations in which a fallback action was triggered.
     type: conversationCounts
     visible: true
-    startDate: '2021-06-03T00:00:00.000Z'
-    endDate: '2021-06-09T23:59:59.999Z'
+    startDate: '2021-06-16T18:30:00.000Z'
+    endDate: '2021-06-23T18:29:59.999Z'
     chartType: line
     valueType: absolute
-    includeIntents: null
-    excludeIntents: null
-    includeActions: null
-    excludeActions: null
-    conversationLength: null
-    userInitiatedConversations: true
-    triggerConversations: true
-    selectedSequence: null
-    wide: null
-    showDenominator: null
-    limit: null
     eventFilter:
       - name: action_botfront_fallback
         excluded: false
         type: action
-        __typename: IntentsAndActionsFilterItem
     eventFilterOperator: or
-    __typename: AnalyticsCard
+    userInitiatedConversations: true
+    triggerConversations: true
   - name: Fallback Rate
     description: The number of times a fallback action was triggered.
     type: actionCounts
     visible: true
-    startDate: '2021-06-03T00:00:00.000Z'
-    endDate: '2021-06-09T23:59:59.999Z'
+    startDate: '2021-06-16T18:30:00.000Z'
+    endDate: '2021-06-23T18:29:59.999Z'
     chartType: line
     valueType: absolute
-    includeIntents: null
-    excludeIntents: null
     includeActions:
       - action_botfront_fallback
-    excludeActions: null
-    conversationLength: null
-    userInitiatedConversations: null
-    triggerConversations: null
-    selectedSequence: null
-    wide: null
-    showDenominator: null
-    limit: null
-    eventFilter: null
-    eventFilterOperator: null
-    __typename: AnalyticsCard
   - name: Top 10 Triggers
-    description: null
     type: triggerFrequencies
     visible: true
-    startDate: '2021-06-03T00:00:00.000Z'
-    endDate: '2021-06-09T23:59:59.999Z'
+    startDate: '2021-06-16T18:30:00.000Z'
+    endDate: '2021-06-23T18:29:59.999Z'
     chartType: bar
     valueType: absolute
-    includeIntents: null
-    excludeIntents: null
-    includeActions: null
-    excludeActions: null
-    conversationLength: null
-    userInitiatedConversations: null
-    triggerConversations: null
-    selectedSequence: null
-    wide: null
-    showDenominator: null
     limit: 10
-    eventFilter: null
-    eventFilterOperator: null
-    __typename: AnalyticsCard
 languages:
   - en
 envs:
   - development
 name: Default Dashboard
-projectId: eEb2rA32449JjTEMS
+projectId: usaCi6ittMNELwhzk
 __v: 0

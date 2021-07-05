@@ -1,10 +1,10 @@
-name: icd
-namespace: bf-icd
+name: ecom
+namespace: bf-ecom
 defaultLanguage: en
 nluThreshold: 0.75
 timezoneOffset: 0
 allowContextualQuestions: false
 instance:
   name: Default Instance
-  host: 'http://rasa:5005'
-  projectId: eEb2rA32449JjTEMS
+  host: 'http://localhost:5005'
+  projectId: usaCi6ittMNELwhzk

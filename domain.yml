@@ -1,16 +1,15 @@
 actions:
+  - action_botfront_disambiguation
+  - action_botfront_disambiguation_followup
+  - action_botfront_fallback
+  - action_botfront_mapping
   - action_entity_submit
   - action_entity_submit1
   - actions_icd
-  - utter_affirm
-  - utter_ask_email
-  - utter_ask_first_name
   - utter_ask_symptom
   - utter_bye
-  - utter_connectors
-  - utter_conversation_continue
-  - utter_deny
   - utter_greet
+  - utter_hi
   - utter_ozgMn-fZC
 entities: []
 forms:
@@ -21,79 +20,43 @@ forms:
     symptom:
       - type: from_text
 intents:
-  - affirm
   - bye
-  - deny
-  - extract_entities
-  - extract_icd_codes
+  - chitchat.greet
   - greet
-  - icd
-  - integartion_faq
-  - products
 responses:
-  utter_affirm:
-    - language: en
-      text: ok
-  utter_ask_email:
-    - language: en
-      metadata: null
-      text: What is your email?
-  utter_ask_first_name:
-    - language: en
-      metadata: null
-      text: what is your First Name?
   utter_ask_symptom:
     - language: en
       text: |
         Please enter patient disease/symptoms?
   utter_bye:
     - language: en
-      metadata: null
-      text: bye
-  utter_connectors:
-    - language: en
-      quick_replies:
-        - title: Mulesoft
-          type: web_url
-          url: 'https://www.mulesoft.com'
-        - title: Workato
-          type: web_url
-          url: 'https://www.waorkato.com'
-      text: >-
-        Yes, I can help with that question, connectors help integrating
-        different products through API exposed by them. I can help with the
-        following integration platforms
-  utter_conversation_continue:
-    - language: en
-      quick_replies:
-        - payload: /affirm
-          title: 'Yes'
-          type: postback
-        - payload: /deny
-          title: 'No'
-          type: postback
-      text: Is there any thing else I can help with?
-  utter_deny:
-    - language: en
-      text: 'ok '
+      text: |-
+        bye
+
+        goodbye
+
+        bye bye
+
+        see you later
   utter_greet:
-    - buttons:
-        - payload: /extract_icd_codes
-          title: ICD10 Code Search
-          type: postback
-        - payload: /extract_entities
-          title: Disease Information Search - Lexigram
-          type: postback
-      language: en
-      metadata: null
-      text: >
-        I am Robin, your virtual information assistant. Good to see you! I can
-        help you with :  
+    - language: en
+      text: Hi. What are you looking for?
+    - language: en
+      text: Hello! What can I help you find today?
+  utter_hi:
+    - language: en
+      text: |-
+        hi
+
+        hello
+
+        hey ya
+
+        howdy
   utter_ozgMn-fZC:
     - elements:
         - buttons: []
           default_action:
-            title: null
             type: web_url
             url: >-
               https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR3rnDV6Bbt3S_VM5uqx1TOScqZG6wDYutfCBjkICCtKWW77VyxBw&usqp=CAc
@@ -104,21 +67,21 @@ responses:
             and Rear Camera (White/Red) 50% on 5310
           title: Nokia
         - buttons: []
-          default_action: null
           image_url: >-
             https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSAnEOj0i2eyn4C2_rG6-ogSiC7E0Y3gZaJaWSa7wLO3laiA2syWz3ZZ1gWPk_Ap1QsX7Ew0mq63o8&usqp=CAc
           subtitle: 'REFURBISHED Nokia 5310 - Pre-Owned Very Good Condition - Red '
           title: 'Nokia 5310 '
+        - buttons: []
+          image_url: ''
+          subtitle: ''
+          title: ''
       language: en
-      metadata: null
 session_config: {}
 slots:
-  email:
-    type: text
+  disambiguation_message:
+    type: unfeaturized
   fallback_language:
     initial_value: en
     type: unfeaturized
-  first_name:
-    type: text
   symptom:
     type: text
