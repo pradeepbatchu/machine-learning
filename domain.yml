@@ -6,6 +6,7 @@ actions:
   - action_entity_submit
   - action_entity_submit1
   - actions_icd
+  - utter_NWJcLp8JQ
   - utter_ask_symptom
   - utter_bye
   - utter_greet
@@ -25,7 +26,20 @@ intents:
   - extract_icd_codes
   - greet
   - icd
+  - products
 responses:
+  utter_NWJcLp8JQ:
+    - elements:
+        - buttons: []
+          image_url: >-
+            https://cdn.shopify.com/s/files/1/0102/8531/8180/products/nokiaexpress_720x.jpg?v=1624957661
+          subtitle: REFURBISHED NOKIA 5310 (6 MONTHS XTRACOVER WARRANTY)
+          title: Nokia 5310
+        - buttons: []
+          image_url: 'https://images-na.ssl-images-amazon.com/images/I/4110ru1t4KL.jpg'
+          subtitle: REFURBISHED  Back NOKIA 5310 (6 MONTHS XTRACOVER WARRANTY)
+          title: Nokia 5310
+      language: en
   utter_ask_symptom:
     - language: en
       text: |

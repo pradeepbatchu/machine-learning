@@ -1,4 +1,12 @@
-stories: []
+stories:
+  - story: products
+    steps:
+      - intent: products
+        user: show products
+        entities: []
+      - action: utter_NWJcLp8JQ
+    metadata:
+      group: Example group
 rules:
   - rule: Farewells
     condition: []

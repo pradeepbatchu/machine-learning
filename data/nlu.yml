@@ -63,4 +63,6 @@ nlu:
     metadata:
       canonical: true
   - text: |
+      show mobiles
+  - text: |
       show products
