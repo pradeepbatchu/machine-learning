@@ -5,7 +5,8 @@ nlu:
     language: en
   examples: |
     - bye bye
-    - good bye
+    - good bye bye
+    - see you soon
 - intent: extract_entities
   metadata:
     language: en
@@ -32,6 +33,7 @@ nlu:
   examples: |
     - hello
     - hi
+    - hiiiii
 - intent: icd
   metadata:
     language: en

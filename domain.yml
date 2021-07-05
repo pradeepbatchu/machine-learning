@@ -10,7 +10,6 @@ actions:
   - utter_bye
   - utter_greet
   - utter_hi
-  - utter_ozgMn-fZC
 entities: []
 forms:
   extract_entities_form:
@@ -44,29 +43,6 @@ responses:
     - language: en
       metadata: null
       text: hi
-  utter_ozgMn-fZC:
-    - elements:
-        - buttons: []
-          default_action:
-            type: web_url
-            url: >-
-              https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR3rnDV6Bbt3S_VM5uqx1TOScqZG6wDYutfCBjkICCtKWW77VyxBw&usqp=CAc
-          image_url: >-
-            https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR3rnDV6Bbt3S_VM5uqx1TOScqZG6wDYutfCBjkICCtKWW77VyxBw&usqp=CAc
-          subtitle: >-
-            Nokia 5310 Dual SIM Feature Phone with MP3 Player, Wireless FM Radio
-            and Rear Camera (White/Red) 50% on 5310
-          title: Nokia
-        - buttons: []
-          image_url: >-
-            https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSAnEOj0i2eyn4C2_rG6-ogSiC7E0Y3gZaJaWSa7wLO3laiA2syWz3ZZ1gWPk_Ap1QsX7Ew0mq63o8&usqp=CAc
-          subtitle: 'REFURBISHED Nokia 5310 - Pre-Owned Very Good Condition - Red '
-          title: 'Nokia 5310 '
-        - buttons: []
-          image_url: ''
-          subtitle: ''
-          title: ''
-      language: en
 session_config: {}
 slots:
   disambiguation_message:
