@@ -22,7 +22,10 @@ forms:
 intents:
   - bye
   - chitchat.greet
+  - extract_entities
+  - extract_icd_codes
   - greet
+  - icd
 responses:
   utter_ask_symptom:
     - language: en
@@ -30,14 +33,8 @@ responses:
         Please enter patient disease/symptoms?
   utter_bye:
     - language: en
-      text: |-
-        bye
-
-        goodbye
-
-        bye bye
-
-        see you later
+      metadata: null
+      text: bye
   utter_greet:
     - language: en
       text: Hi. What are you looking for?
@@ -45,14 +42,8 @@ responses:
       text: Hello! What can I help you find today?
   utter_hi:
     - language: en
-      text: |-
-        hi
-
-        hello
-
-        hey ya
-
-        howdy
+      metadata: null
+      text: hi
   utter_ozgMn-fZC:
     - elements:
         - buttons: []

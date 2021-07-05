@@ -1,0 +1,46 @@
+stories: []
+rules:
+  - rule: Activate Entity form
+    condition: []
+    steps:
+      - intent: extract_entities
+      - action: extract_entities_form
+      - active_loop: extract_entities_form
+    metadata:
+      group: rules.yml
+  - rule: Activate Entity form ICD
+    steps:
+      - intent: extract_icd_codes
+      - action: extract_icd_form
+      - active_loop: extract_icd_form
+    metadata:
+      group: rules.yml
+  - rule: ICD
+    condition: []
+    steps:
+      - intent: icd
+      - action: actions_icd
+    metadata:
+      group: rules.yml
+  - rule: Submit entity form
+    condition:
+      - active_loop: extract_entities_form
+    steps:
+      - action: extract_entities_form
+      - active_loop: null
+      - slot_was_set:
+          - requested_slot: null
+      - action: action_entity_submit1
+    metadata:
+      group: rules.yml
+  - rule: Submit ICD form
+    condition:
+      - active_loop: extract_icd_form
+    steps:
+      - action: extract_icd_form
+      - active_loop: null
+      - slot_was_set:
+          - requested_slot: null
+      - action: action_entity_submit
+    metadata:
+      group: rules.yml

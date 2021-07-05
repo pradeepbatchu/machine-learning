@@ -4,7 +4,7 @@ nlu:
   metadata:
     language: en
   examples: |
-    - bye
+    - bye bye
     - good bye
 - intent: extract_entities
   metadata:
