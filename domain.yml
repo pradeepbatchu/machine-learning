@@ -9,8 +9,10 @@ actions:
   - utter_NWJcLp8JQ
   - utter_ask_symptom
   - utter_bye
+  - utter_default
   - utter_greet
   - utter_hi
+  - utter_medicine
 entities: []
 forms:
   extract_entities_form:
@@ -24,8 +26,10 @@ intents:
   - chitchat.greet
   - extract_entities
   - extract_icd_codes
+  - get_started
   - greet
   - icd
+  - medicine
   - products
 responses:
   utter_NWJcLp8JQ:
@@ -57,6 +61,14 @@ responses:
     - language: en
       metadata: null
       text: hi
+  utter_medicine:
+    - custom:
+        employee:
+          married: true
+          name: sonoo
+          salary: 56000
+      language: en
+      metadata: null
 session_config: {}
 slots:
   disambiguation_message:

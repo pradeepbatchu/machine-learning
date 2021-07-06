@@ -1,0 +1,34 @@
+stories:
+  - story: test_story_8UQYXyxEk
+    steps:
+      - user: /greet
+        intent: greet
+      - action: utter_greet
+      - user: show products
+        intent: products
+      - action: utter_NWJcLp8JQ
+    metadata:
+      group: Example group
+      language: en
+  - story: test_story_FV-kogkba
+    steps:
+      - user: /get_started
+        intent: get_started
+      - action: utter_default
+      - user: hello
+        intent: greet
+      - action: utter_greet
+    metadata:
+      group: Example group
+      language: en
+  - story: test_story_XpzcaabYm
+    steps:
+      - user: /greet
+        intent: greet
+      - action: utter_greet
+      - user: show products
+        intent: products
+      - action: utter_NWJcLp8JQ
+    metadata:
+      group: Example group
+      language: en

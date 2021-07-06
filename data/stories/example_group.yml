@@ -1,4 +1,10 @@
 stories:
+  - story: medicine
+    steps:
+      - intent: medicine
+      - action: utter_medicine
+    metadata:
+      group: Example group
   - story: products
     steps:
       - intent: products

@@ -39,11 +39,11 @@ nlu:
     language: en
   examples:
   - text: |
-      I am suffering from [[fever](symptom)]{"entity": "symptom", "value": "fever"}
+      I am suffering from [fever]{"entity": "symptom", "value": "Fever"}
     metadata:
       canonical: true
   - text: |
-      get icd code for [[cold](symptom)]{"entity": "symptom", "value": "cold"}
+      get icd code for [cold]{"entity": "symptom", "value": "Cold"}
     metadata:
       canonical: true
   - text: |
@@ -54,6 +54,14 @@ nlu:
       what is the icd code for [cough](symptom)
     metadata:
       canonical: true
+- intent: medicine
+  metadata:
+    language: en
+  examples: |
+    - medicine
+    - medicine names
+    - types of medicine
+    - types of medicine allopathic
 - intent: products
   metadata:
     language: en
