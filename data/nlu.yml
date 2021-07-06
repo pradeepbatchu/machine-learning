@@ -16,7 +16,9 @@ nlu:
     metadata:
       canonical: true
   - text: |
-      extract_entities
+      details of disease
+  - text: |
+      extract entities from disease
 - intent: extract_icd_codes
   metadata:
     language: en
@@ -26,14 +28,18 @@ nlu:
     metadata:
       canonical: true
   - text: |
+      ICD
+  - text: |
       ICDCODE
 - intent: greet
   metadata:
     language: en
   examples: |
     - hello
+    - hey
     - hi
     - hiiiii
+    - hiiiiiiiiiii
 - intent: icd
   metadata:
     language: en
@@ -43,9 +49,15 @@ nlu:
     metadata:
       canonical: true
   - text: |
+      find me icd code for [dengue]{"entity": "symptom", "value": "Dengue"}
+  - text: |
       get icd code for [cold]{"entity": "symptom", "value": "Cold"}
     metadata:
       canonical: true
+  - text: |
+      get me icd code for [depression]{"entity": "symptom", "value": "Depression"}
+  - text: |
+      provide me icd value for [malaria]{"entity": "symptom", "value": "Malaria"}
   - text: |
       show me the icd code for [corona](symptom)
     metadata:
