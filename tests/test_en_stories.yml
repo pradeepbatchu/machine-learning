@@ -32,19 +32,3 @@ stories:
     metadata:
       group: Example group
       language: en
-  - story: test_story_U0hFpVjX8
-    steps:
-      - user: /greet
-        intent: greet
-      - action: utter_greet
-      - user: hi
-        intent: greet
-      - action: utter_greet
-      - user: bye
-        intent: bye
-      - action: utter_bye
-      - user: 'get icd code for [cold]{"entity": "symptom"}'
-        intent: icd
-    metadata:
-      group: Example group
-      language: en

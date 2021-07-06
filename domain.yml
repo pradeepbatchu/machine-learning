@@ -13,8 +13,7 @@ actions:
   - utter_greet
   - utter_hi
   - utter_medicine
-entities:
-  - entity
+entities: []
 forms:
   extract_entities_form:
     symptom:
