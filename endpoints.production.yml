@@ -1,8 +1,8 @@
 nlg:
   type: rasa_addons.core.nlg.GraphQLNaturalLanguageGenerator
-  url: 'http://192.168.1.2:3000/graphql'
+  url: 'http://192.168.1.4:3000/graphql'
 action_endpoint:
   url: 'https://netrovertactions.netrovert.net/webhook'
 tracker_store:
   store_type: rasa_addons.core.tracker_stores.botfront.BotfrontTrackerStore
-  url: 'http://192.168.1.2:3000/graphql'
+  url: 'http://192.168.1.4:3000/graphql'
