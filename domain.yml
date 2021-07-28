@@ -35,15 +35,23 @@ responses:
   utter_NWJcLp8JQ:
     - elements:
         - buttons: []
+          default_action: null
           image_url: >-
             https://cdn.shopify.com/s/files/1/0102/8531/8180/products/nokiaexpress_720x.jpg?v=1624957661
           subtitle: REFURBISHED NOKIA 5310 (6 MONTHS XTRACOVER WARRANTY)
           title: Nokia 5310
         - buttons: []
+          default_action: null
           image_url: 'https://images-na.ssl-images-amazon.com/images/I/4110ru1t4KL.jpg'
           subtitle: REFURBISHED  Back NOKIA 5310 (6 MONTHS XTRACOVER WARRANTY)
           title: Nokia 5310
+        - buttons: []
+          image_url: >-
+            https://rukminim1.flixcart.com/image/832/832/ked56kw0/mobile/c/e/z/nokia-5310-12pisx21b01-original-imafv2dv7tearrdp.jpeg?q=70
+          subtitle: 'Silver '
+          title: Nokia 5310
       language: en
+      metadata: null
   utter_ask_symptom:
     - language: en
       text: |
